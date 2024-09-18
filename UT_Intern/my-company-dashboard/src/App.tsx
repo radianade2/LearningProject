@@ -12,8 +12,8 @@ const App: React.FC = () => {
       <Routes>
          {/* Tambahkan route di sini */}
         <Route path="/" element={<Dashboard />} />
-        {/* <Route path="/Peminjaman" element={<Peminjaman />} /> */}
-        {/* <Route path="/Pengembalian" element={<Pengembalian />} /> */}
+        <Route path="/Peminjaman" element={<Peminjaman />} />
+        <Route path="/Pengembalian" element={<Pengembalian />} />
       </Routes>
     </Router>
   );

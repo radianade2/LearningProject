@@ -4,7 +4,9 @@ import { Box, Container, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import { Link } from 'react-router-dom'; // Import Link
 import useGlobalStore from '../store/useGlobal.ts'; // Import store
-import { Item, Header, Footer } from '../store/globalStyles.ts'; // Import Global Styles
+import { Item} from '../store/globalStyles.ts'; // Import Global Styles
+import Header from '../components/Header.tsx';
+import Footer from '../components/Footer.tsx';
 
 const Dashboard: React.FC = () => {
   const colors = useGlobalStore((state) => state.colors);
@@ -14,10 +16,7 @@ const Dashboard: React.FC = () => {
     <Grid container direction="column" style={{ height: '97vh', margin: 0, background: 'linear-gradient(to bottom right, #f0f0f0, #e0e0e0)' }}>
       {/* Header */}
       <Grid>
-        <Header style={{ backgroundColor: colors.yellow }}>
-          <img src={logo.logoCompany} style={{ width: '100px', marginRight: '10px' }} />
-          <Typography variant="h5">Header Section</Typography>
-        </Header>
+        <Header/>
       </Grid>
 
       {/* Body */}
@@ -53,9 +52,7 @@ const Dashboard: React.FC = () => {
 
       {/* Footer */}
       <Grid>
-        <Footer style={{ backgroundColor: colors.black, color: colors.white }}>
-          <Typography variant="h5">Footer Section</Typography>
-        </Footer>
+        <Footer />
       </Grid>
     </Grid>
   );
