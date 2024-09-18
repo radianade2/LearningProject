@@ -23,7 +23,7 @@ export const Item = styled(Paper)(({ theme }) => ({
 }));
 
 // Styling untuk Header
-export const Header = styled(Grid)({
+export const HeaderStyle = styled(Grid)({
   width: '100%',
   height: '80px',
   display: 'flex',
@@ -33,7 +33,7 @@ export const Header = styled(Grid)({
 });
 
 // Styling untuk Footer
-export const Footer = styled(Grid)({
+export const FooterStyle = styled(Grid)({
   width: '100%',
   height: '80px',
   display: 'flex',
